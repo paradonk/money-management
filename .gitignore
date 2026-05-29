@@ -1,0 +1,13 @@
+# Sensitive config
+config/db.php
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# PHP
+*.log
