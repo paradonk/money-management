@@ -2,6 +2,8 @@
 
 A modern personal finance web application for salary and debt management.
 
+![Money Manager Dashboard](assets/img/money-management.png)
+
 ## Features
 
 - **Auth** — register, login, forgot password
