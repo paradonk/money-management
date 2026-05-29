@@ -18,7 +18,7 @@ for ($m = 1; $m <= 12; $m++) {
 }
 
 // Debt summary
-$debtSummary = $pdo->prepare('SELECT d.*, (SELECT COALESCE(SUM(amount),0) FROM debt_payments p WHERE p.debt_id=d.id) as total_paid FROM debts WHERE d.user_id=? ORDER BY d.status,d.name');
+$debtSummary = $pdo->prepare('SELECT d.*, (SELECT COALESCE(SUM(amount),0) FROM debt_payments p WHERE p.debt_id=d.id) as total_paid FROM debts d WHERE d.user_id=? ORDER BY d.status,d.name');
 $debtSummary->execute([$userId]);
 $debtSummary = $debtSummary->fetchAll();
 

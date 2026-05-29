@@ -96,10 +96,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="<?= APP_URL ?>/register.php" class="text-primary fw-500">Create one free</a>
         </p>
 
-        <div class="demo-hint mt-3">
-            <i class="fa fa-info-circle me-1"></i>
-            Demo: <strong>demo@example.com</strong> / <strong>demo1234</strong>
-        </div>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

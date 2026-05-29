@@ -1,8 +1,8 @@
 -- Money Management Database Schema
 -- Run: mysql -u root -p < schema.sql
 
-CREATE DATABASE IF NOT EXISTS money_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE money_management;
+CREATE DATABASE IF NOT EXISTS datacivi_money CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE datacivi_money;
 
 CREATE TABLE IF NOT EXISTS users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS notifications (
 
 -- Sample user (password: demo1234)
 INSERT INTO users (name, email, password, currency) VALUES
-('Demo User', 'demo@example.com', '$2y$12$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'THB');
+('Demo User', 'demo@example.com', '$2y$12$epeYYVR4KWulzLzdigAAGe.7cEgP8zEapAOnG819vr95Jk201EH3S', 'THB');
 
 -- Sample incomes (month=5, year=2026)
 INSERT INTO incomes (user_id, type, name, amount, month, year) VALUES
